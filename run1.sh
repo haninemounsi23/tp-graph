@@ -1,4 +1,5 @@
-tool=dot
+#tool=dot
+tool=neato
 
 if [ -z "$1" ]; then
   echo "Erreur : argument manquant"
