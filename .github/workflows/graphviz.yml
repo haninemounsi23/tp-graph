@@ -8,8 +8,6 @@ jobs:
         run: sudo apt-get update && sudo apt-get install -y graphviz
       - name: Check out repository code
         uses: actions/checkout@v6
-      - name: Rendre le script executable
-        run: chmod +x run1.sh
       - name: Lancement graphviz
         run: ./run1.sh g1
 
