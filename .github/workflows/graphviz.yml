@@ -1,3 +1,4 @@
+
 name: graphes
 on: [push]
 jobs:
@@ -9,9 +10,10 @@ jobs:
       - name: Installation de graphviz
         run: sudo apt-get update && sudo apt-get install -y graphviz
       - name: Lancement graphviz
-        run: ./run1.sh g1
+        run: ./run2.sh
       - name: upload du resultat
-        uses: actions/upload-artifact@v6
+        uses: actions/upload-artifact@v5
         with:
-          name: graphe-g1
-          path: g1.svg
+          name: graphes-svg
+          path: "*.svg"
+
